@@ -8,13 +8,42 @@
 </head>
 <body>
 
-	<form class="box" method="post">
-		<h1>Login</h1>
-		<input type="text" name="" placeholder="user name">
-		<input type="password" name="" placeholder="password">
-		<input type="submit" name="" value="Login">
+	  <div class="container">
+        <form class="row g-3 needs-validation" novalidate>
+            <center>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">
+                        <h1 class="display-4">
+                            <p class="text-info ">User Name</p>
+                        </h1>
+                    </label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" name="user name" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Enter your Email" required>
+                        <div class="invalid-feedback">
+                            Please enter your user name.
+                        </div>
+                    </div>
+                </div>
 
-	</form>
+                <div class="col-md-4">
+                    <label for="validationCustom06" class="form-label">
+                        <h1 class="display-4">
+                            <p class="text-info ">PASSWORD</p>
+                        </h1>
+                    </label>
+                    <input type="password" name="password" class="form-control" id="validationCustom06" placeholder="Create password" required>
+                </div>
+                <br>
+                <div class="col-12">
+                    <button class="btn btn-info" type="submit">
+                        <h4>Submit form</h4>
+                    </button>
+                </div>
+            </center>
+
+        </form>
+    </div>
 
 </body>
 </html>
