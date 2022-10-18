@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<title>DP Animated Login Form 1</title>
-	<link rel="stylesheet" href="login1style.css">
-</head>
-<body>
 
-	  <div class="container">
-        <form class="row g-3 needs-validation" novalidate>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>DP Animated Login Form 1</title>
+    <link rel="stylesheet" href="login1style.css">
+</head>
+
+<body>
+    <h1 class="display-3">
+        <center>
+            <u>
+                <b>
+                    Login Form
+                </b>
+            </u>
+        </center>
+    </h1>
+
+    <br><br>
+    <div class="container">
+        <form class="row g-3 needs-validation" novalidate method="POST">
             <center>
                 <div class="col-md-4">
                     <label for="validationCustomUsername" class="form-label">
-                        <h1 class="display-4">
-                            <p class="text-info ">User Name</p>
-                        </h1>
+                        <h3>
+                            <b>
+                                Email
+                            </b>
+                        </h3>
                     </label>
-                    <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" class="form-control" name="user name" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Enter your Email" required>
-                        <div class="invalid-feedback">
-                            Please enter your user name.
-                        </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Enter your e-mail...." aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <label for="validationCustom06" class="form-label">
-                        <h1 class="display-4">
-                            <p class="text-info ">PASSWORD</p>
-                        </h1>
+                        <h3>Password</h3>
                     </label>
-                    <input type="password" name="password" class="form-control" id="validationCustom06" placeholder="Create password" required>
+                    <input type="password" name="pass" class="form-control" id="validationCustom06" placeholder="Create password" required>
                 </div>
                 <br>
                 <div class="col-12">
-                    <button class="btn btn-info" type="submit">
-                        <h4>Submit form</h4>
-                    </button>
+                <button type="button" class="btn btn-success">Submit</button>
                 </div>
+                <div class="text-center">
+                    <p>Not a member? <a href="signup.php">Register</a></p>
+                </div>
+
             </center>
 
         </form>
     </div>
-
 </body>
+
 </html>
